@@ -160,15 +160,7 @@ A linear data structure which follows a particular order in which the operations
 - **Limited Access**: Can only access the top element. Random access is not allowed/efficient.
 
 ### Diagram
-```plantuml
-@startuml
-stack Stack {
-  Item 3 (Top)
-  Item 2
-  Item 1 (Bottom)
-}
-@enduml
-```
+
 *(Conceptually)*
 ```plantuml
 @startuml
