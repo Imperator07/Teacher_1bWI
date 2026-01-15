@@ -1,3 +1,7 @@
+# Caching 
+
+The diagram show how caching works
+
 ```plantuml
 @startuml
 participant Browser
