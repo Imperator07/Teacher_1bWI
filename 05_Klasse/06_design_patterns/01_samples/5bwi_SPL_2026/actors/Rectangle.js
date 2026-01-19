@@ -1,4 +1,4 @@
-export class Circle {
+export class Rectangle {
     constructor(x, y, sizeX, sizeY) {
         this.x = x;
         this.y = y;
@@ -7,11 +7,10 @@ export class Circle {
     }
     update(deltaTime) {
         this.x += deltaTime * 100;
+        this.y = Math.sin(this.x / 50) * 100 + 200;
     }
     render(ctx) {
         ctx.fillStyle = "red";
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.sizeX, 0, 2 * Math.PI);
-        ctx.stroke();
+        ctx.fillRect(this.x, this.y, this.sizeX, this.sizeY);
     }
 }

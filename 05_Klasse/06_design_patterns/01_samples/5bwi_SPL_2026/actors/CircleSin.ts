@@ -1,5 +1,5 @@
 import { Actor } from "./Actor.js";
-export class Circle implements Actor {
+export class CircleSin implements Actor {
   constructor(
     private x: number,
     private y: number,
@@ -9,6 +9,7 @@ export class Circle implements Actor {
 
   update(deltaTime: number) {
     this.x += deltaTime * 100;
+    this.y = Math.sin(this.x / 50) * 100 + 200;
   }
 
   render(ctx: CanvasRenderingContext2D) {

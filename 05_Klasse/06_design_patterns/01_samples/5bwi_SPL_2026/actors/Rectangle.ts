@@ -10,6 +10,7 @@ export class Rectangle implements Actor {
 
   update(deltaTime: number) {
     this.x += deltaTime * 100;
+    this.y = Math.sin(this.x / 50) * 100 + 200;
   }
 
   render(ctx: CanvasRenderingContext2D) {
