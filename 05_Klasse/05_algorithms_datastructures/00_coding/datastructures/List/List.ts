@@ -19,4 +19,11 @@ export class List {
       current.setNext(newNode);
     }
   }
+  public get(index: number): Node | null {
+    return null;
+  }
+
+  public remove(index: number): boolean {
+    return true;
+  }
 }
